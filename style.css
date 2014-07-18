@@ -1,0 +1,299 @@
+@font-face {
+    font-family:segoe-ui;
+    src: url(segoe-ui-1361529660.ttf);
+}
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.main_wrapper
+{
+
+    width: 80%;
+    height:70%;
+    position : relative;
+    margin: 0px auto;
+    margin-top:10%;
+
+
+}
+
+.left_panel
+{
+    /*background-color: red;*/
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+
+.right_panel
+{
+
+    width: 70%;
+    height: 70%;
+    float: left;
+
+
+}
+
+.left_selection_panel
+{
+    width:100%;
+     height:75%;
+    /*background-color:palevioletred ;*/
+    float: left;
+
+    position: relative;
+}
+.left_selection_panel_box
+{
+    width: 95%;
+    height:25%;
+    background-color:#D9D9D9;
+    margin: 5px;
+    float: left;
+    position: relative;
+}
+.left_selection_panel_box p
+{
+
+    color: white;
+    margin: 20px;
+    font-face:segoe-ui;
+    text-align: left;
+
+}
+
+
+.dash_panel
+{
+    width: 100%;
+    height:100%;
+    background-color: #EBEBEB;
+    float: left;
+    margin-top: 5px;
+
+
+}
+.dash_panel_button
+{
+    width: 70%;
+    height: 10%;
+    float: left;
+
+
+
+}
+.dashboard_button
+{
+
+    width: 100px;
+    height:30px;
+    position: absolute;
+    top: 40px;
+    right:50px;
+}
+
+.dashboard_button input[type=button]
+{
+    width: 100px;
+    height: 30px;
+    background-color: #Ff9223;
+    border-style: none;
+    color: white;
+    outline: none;
+}
+.dash_panel_button input[type=button]
+{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border-style: none;
+    color: white;
+    float: right;
+    margin:10px;
+}
+.thumbnail_box
+{
+    height: 59px;
+    width: 86px;
+    border: 1px solid #999999;
+    float: left;
+}
+.thumbnail
+{
+
+    color: #262626;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 87px;
+    margin: 2%;
+
+    position: relative;
+    text-align: center;
+    width: 86px;
+
+}
+.thumbnail_text
+{
+    /*height: 10%;*/
+    /*width: 99%;*/
+    /*font-face:segoe-ui;*/
+    /*font-size: 90%;*/
+    /*float: left;*/
+    /*color: #999999;*/
+    /*margin-top: 10px;*/
+    margin-top: 80%;
+    text-align: left;
+    color: #999999;
+
+}
+
+.visted
+{
+    background-color: #6BC1E3;
+
+}
+.current
+{
+    background-color: #Ff9223;
+
+}
+/*.Questions_panel*/
+/*{*/
+    /*width:40%;*/
+    /*height:80%;*/
+    /*background-color: #E6E6E6;*/
+    /*float: left;*/
+    /*margin:15px;*/
+
+/*}*/
+/*.Questions_panel_box*/
+/*{*/
+    /*width:100%;*/
+    /*height:10%;*/
+    /*border-top: 2px solid white;*/
+    /*border-bottom: 2px solid white;*/
+    /*float: left;*/
+
+
+/*}*/
+
+/*.panel_heading*/
+/*{*/
+    /*width:100%;*/
+    /*height:10%;*/
+    /*background-color: #FFAA23;*/
+    /*float: left;*/
+    /*text-align: center;*/
+    /*padding-top: 2px;*/
+    /*color: white;*/
+/*}*/
+/*.Slides_panel*/
+/*{*/
+    /*width:40%;*/
+    /*height:80%;*/
+    /*background-color: #E6E6E6;*/
+    /*float: left;*/
+    /*margin:15px;*/
+
+/*}*/
+
+
+/*---------------------------------------Table Css---------------------------*/
+
+.linking_panel_box
+{
+
+
+
+    float: left;
+    height: 87%;
+    margin: 4%;
+    position: relative;
+    width: 92%;
+    background-color:#E6E6E6;
+
+    border-spacing:15px 0px;
+}
+td
+{
+    width:40%;
+    border-top: 4px solid white;
+    font-face:segoe-ui;
+    color: #999999;
+    padding-left: 5%;
+}
+
+.linking_panel_box  th
+{
+    background-color: #Ff9223;
+   font-weight:normal;
+    color: white;
+    font-face:segoe-ui;
+
+
+}
+.Questions_text
+{
+
+color: #999999;
+padding-left: 5%;
+
+}
+
+.dropdownbox
+{
+    height: 75%;
+    width: 90%;
+    color: #999999;
+    padding-left: 5%;
+    margin-left: 5%;
+}
+
+/*---------------------------------------Table Css---------------------------*/
+
+
+/*.dropdown_box*/
+/*{*/
+
+    /*float: left;*/
+    /*height: 75%;*/
+    /*margin-left: 5%;*/
+    /*margin-top: 5px;*/
+    /*width: 90%;*/
+    /*color: #999999;*/
+    /*font-face:segoe-ui;*/
+
+
+/*}*/
+.visted_button
+{
+    background-color: #Ff9223;
+
+}
+
+.current_button
+{
+
+    background-color: #D4D4D4;
+
+}
+
+.panel_show
+{
+
+    display: block;
+}
+
+.panel_hide
+{
+    display:none;
+
+}

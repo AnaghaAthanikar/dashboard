@@ -1,0 +1,342 @@
+<html>
+<head>
+    <title>dash board</title>
+    <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="dashboard_button"><input type="button" value="Dashboard"></div>
+<div class="main_wrapper">
+<div class="left_panel">
+    <div class="left_selection_panel">
+        <div class="left_selection_panel_box current" onclick="myFunction(this)"><p>Games</p></div>
+        <div class="left_selection_panel_box" onclick="myFunction(this)"><p>Deck selection</p></div>
+        <div class="left_selection_panel_box" onclick="myFunction(this)"><p>Question selection</p></div>
+        <div class="left_selection_panel_box" onclick="myFunction(this)"><p>Linking</p></div>
+    </div>
+
+
+</div>
+<div class="right_panel">
+
+<div class="dash_panel" id="gamespanel" style="display: none"></div>
+
+
+<div class="dash_panel" id="deckselection" style="display: none">
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Question 1</div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Question 2</div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Question 3</div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Question 4</div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Question 5</div>
+    </div>
+</div>
+
+
+<div class="dash_panel" id="questionselection" >
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Deck-1</div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box"></div>
+        <div class="thumbnail_text">Deck-2
+        </div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Deck-3
+        </div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Deck-3
+        </div>
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail_box" ></div>
+        <div class="thumbnail_text">Deck-4
+        </div>
+    </div>
+
+
+</div>
+<!--<div class="dash_panel_button">-->
+<!--<input type="button" value="Previous">-->
+<!--<input type="button" value="Next" id="next_btn">-->
+<!--<input type="button" value="Finish">-->
+
+<!--</div>-->
+
+
+<div class="dash_panel" id="linking" style="display: none">
+    <table class="linking_panel_box">
+        <tr>
+            <th>Questions </th>
+            <th>Slides</th>
+
+        </tr>
+        <tr>
+
+            <td class="Questions_text">Q1. Sample Question</td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+
+
+        <tr>
+
+
+        <tr>
+            <td class="Questions_text">Q1. Sample Question</td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="Questions_text">Q1. Sample Question
+            </td>
+            <td><select class="dropdownbox">
+                <option value="volvo">slide1</option>
+                <option value="saab">slide1</option>
+                <option value="mercedes">slide1</option>
+                <option value="audi">slide1</option>
+            </select></td>
+        </tr>
+
+
+    </table>
+
+    <!--<div class="Questions_panel">-->
+    <!--<div class="panel_heading">Questions</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box">-->
+    <!--<div class="dropdown_box">Q1. Sample Question</div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="Slides_panel" >-->
+    <!--<div class="panel_heading">Slides</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="Questions_panel_box"><select class="dropdown_box">-->
+    <!--<option value="Slide1">Slide1</option>-->
+    <!--<option value="Slide2">Slide2</option>-->
+    <!--<option value="Slide3">Slide3</option>-->
+    <!--<option value="Slide4">Slide4</option>-->
+    <!--</select>-->
+    <!--</div>-->
+
+
+    <!--</div>-->
+</div>
+
+
+</div>
+<div class="dash_panel_button">
+    <input type="button" value="Previous" id="Prev_btn" class="current_button">
+    <input type="button" value="Next" id="next_btn" class="current_button">
+    <input type="button" value="Finish" id="finish_btn" class="current_button">
+
+</div>
+
+
+</div>
+
+<script>
+
+    $(function () {
+        // Handler for .ready() called.
+        var left_menu_item_list_count = $('.left_selection_panel_box').length;
+        var initial_count = 1;
+
+
+        $("#next_btn").click(function () {
+            $('#Prev_btn').removeClass('current_button').addClass('visted_button');
+            $('#next_btn').removeClass('current_button').addClass('visted_button');
+
+            console.log("initial_count :- " + left_menu_item_list_count);
+            if (initial_count > 3) {
+                $('#finish_btn').removeClass('current_button').addClass('visted_button');
+            }
+            console.log(initial_count)
+
+            $('.left_selection_panel_box').eq((initial_count - 1)).removeClass('current').addClass('visted');
+            $('#gamespanel').eq(initial_count).addClass('current');
+            $('.left_selection_panel_box').eq(initial_count).addClass('current');
+
+            initial_count = initial_count + 1;
+
+        });
+
+        $("#Prev_btn").click(function () {
+            console.log(initial_count);
+            $('.left_selection_panel_box').eq(initial_count - 1).addClass('visted').removeClass('current');
+            $('.left_selection_panel_box').eq((initial_count - 2)).removeClass('visted').addClass('current');
+
+            initial_count = initial_count - 1;
+        });
+
+
+    });
+    $(".thumbnail_box").click(function() {
+        $(this).css("background", "#FFAA23");
+    });
+
+    //    function myFunction(divObj) {
+    //
+    //        elements = document.getElementsByClassName("left_selection_panel_box");
+    //
+    //        for (var i = 0; i < elements.length; i++) {
+    //
+    //            elements[i].classList.remove("current");
+    //
+    //
+    //        }
+    //        //        document.getElementsByClassName("title").style.background="red";
+    //        divObj.className += ' current';
+    //        divObj.className += ' visted';
+    //    }
+
+
+</script>
+
+</body>
+</html>
